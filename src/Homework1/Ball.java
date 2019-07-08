@@ -27,9 +27,15 @@ public class Ball {
         } else {
             color = Color.Green;
         }
+
+        printcolour();
     }
 
     public void changeColor(Color newColor) {
         color = newColor;
+    }
+
+    public void printcolour() {
+        System.out.println(color);
     }
 }
