@@ -10,11 +10,16 @@ public class Cat {
     boolean isFull;
 
     public Cat(String newName) {
-        isAlive = true;
 
         Random randomiser = new Random();
-        int randomNumber = randomiser.nextInt(10);
+        int randomNumber = randomiser.nextInt(20);
         age = randomNumber;
+
+        if (age >= 15) {
+            isAlive = false;
+        } else {
+            isAlive = true;
+        }
 
         isFull = false;
 
