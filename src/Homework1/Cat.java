@@ -21,4 +21,7 @@ public class Cat {
         name = newName;
     }
 
+    public void feedCat() {
+        isFull = true;
+    }
 }

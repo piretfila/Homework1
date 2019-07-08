@@ -16,10 +16,10 @@ public class Homework1 {
         hello();
 
         Cat kass = new Cat("Juss");
-        Cat manni = new Cat("Manni");
         printCatDetails(kass);
-        printCatDetails(manni);
-        printCatDetails(new Cat("Bosse"));
+
+        kass.feedCat();
+        printCatDetails(kass);
     }
 
     public static void hello() {
@@ -31,6 +31,7 @@ public class Homework1 {
         System.out.println(cat.age);
         System.out.println("Is full: " + cat.isFull);  // "is full: " + "true"     prinditakse: "is full: true"
         System.out.println("Is Alive: " + cat.isAlive);
+        System.out.println("--------------------------------");
     }
 
 }
