@@ -15,13 +15,25 @@ public class Homework1 {
         hello();
         hello();
 
-        Cat kass = new Cat("Juss");
-        kass.feedCat();
+        Cat kass = createNewAliveCat("Juss");
         printCatDetails(kass);
 
-        Cat manni = new Cat("Manni");
+        Cat manni = createNewDeadCat("Bosse");
         printCatDetails(manni);
+        
+    }
 
+    public static Cat createNewAliveCat(String name) {
+        Cat aliveCat = new Cat(name);
+        aliveCat.isAlive = true;
+        aliveCat.feedCat();
+        return aliveCat;
+    }
+
+    public static Cat createNewDeadCat(String name) {
+        Cat deadCat = new Cat(name);
+        deadCat.isAlive = false;
+        return deadCat;
     }
 
     public static void hello() {
@@ -39,5 +51,4 @@ public class Homework1 {
 
         System.out.println("--------------------------------");
     }
-
 }
