@@ -7,7 +7,7 @@ public class Homework1 {
         sayHello();
         sayHello();
         sayGoodbye();
-        System.out.println(getName();
+        System.out.println(getName());
     }
 
     public static void sayHello() {
