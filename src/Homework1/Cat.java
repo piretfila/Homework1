@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Cat {
 
-    String name;
+    private String name;
     int age;
     boolean isAlive;
     boolean isFull;
@@ -28,5 +28,22 @@ public class Cat {
 
     public void feedCat() {
         isFull = true;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void printDetails() {
+        System.out.println(name);
+        System.out.println(age);
+
+        System.out.println("Is Alive: " + isAlive);
+
+        if (isAlive) {
+            System.out.println("Is full: " + isFull);  // "is full: " + "true"     prinditakse: "is full: true"
+        }
+
+        System.out.println("--------------------------------");
     }
 }

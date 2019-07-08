@@ -18,9 +18,13 @@ public class Homework1 {
         Cat kass = createNewAliveCat("Juss");
         printCatDetails(kass);
 
-        Cat manni = createNewDeadCat("Bosse");
+        Cat manni = createNewAliveCat("Manni");
         printCatDetails(manni);
-        
+
+        manni.printDetails();
+
+
+
     }
 
     public static Cat createNewAliveCat(String name) {
@@ -41,8 +45,9 @@ public class Homework1 {
     }
 
     public static void printCatDetails(Cat cat) {
-        System.out.println(cat.name);
+        System.out.println(cat.getName());
         System.out.println(cat.age);
+
         System.out.println("Is Alive: " + cat.isAlive);
 
         if (cat.isAlive) {
