@@ -24,7 +24,6 @@ public class Homework1 {
         manni.printDetails();
 
 
-
     }
 
     public static Cat createNewAliveCat(String name) {
